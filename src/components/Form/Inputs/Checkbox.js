@@ -1,10 +1,11 @@
 import TextError from "../TextError";
 import classes from "./inputs.module.scss";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Field, ErrorMessage } from "formik";
 
 const CheckboxGroup = (props) => {
   const { label, name, options, ...rest } = props;
+
   return (
     <div className={classes.form_control}>
       <label>{label}</label>
@@ -12,7 +13,7 @@ const CheckboxGroup = (props) => {
         <Field name={name}>
           {({ field }) =>
             options.map((option) => {
-              console.log(option);
+              console.log(option.value);
               return (
                 <Fragment key={option.key}>
                   <input
