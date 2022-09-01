@@ -4,9 +4,7 @@ import classes from "./edit-contacts.module.scss";
 const EditContacts = () => {
   return (
     <div className={classes.container}>
-      <div className={classes.container__wrapper}>
-        <FormContent />
-      </div>
+      <FormContent />
     </div>
   );
 };
