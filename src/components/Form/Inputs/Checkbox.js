@@ -8,15 +8,17 @@ const CheckboxGroup = (props) => {
   return (
     <div className={classes.form_control}>
       <label>{label}</label>
-      <div className={classes.form_control__checkbox }>
+      <div className={classes.form_control__checkbox}>
         <Field name={name}>
           {({ field }) =>
             options.map((option) => {
+              console.log(option);
               return (
                 <Fragment key={option.key}>
                   <input
                     type="checkbox"
                     id={option.id}
+                    checked={option.value}
                     {...field}
                     {...rest}
                     value={option.value}

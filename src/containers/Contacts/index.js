@@ -28,7 +28,7 @@ const Contacts = () => {
     <div className={classes.container}>
       {contacts.map((contact) => {
         return loading ? (
-          <SkeletonCards />
+          <SkeletonCards key={contact.id} />
         ) : (
           <ContactCard key={contact.id} contact={contact} />
         );
