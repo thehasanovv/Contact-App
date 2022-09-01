@@ -1,0 +1,14 @@
+@import "../../styles/main";
+
+.container {
+  border-radius: 0.35rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+
+  &__wrapper {
+    background-color: red !important;
+    padding: 10rem;
+  }
+}

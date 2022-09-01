@@ -1,0 +1,44 @@
+@import "../../styles/main";
+
+.header-container {
+  height: 5.5rem;
+  background-color: $gray_8;
+  border-radius: 0.35rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @include flex($content: space-between);
+
+  &__left {
+    cursor: pointer;
+    @include flex();
+    &__logo {
+      width: 2.7rem;
+      margin-right: 1rem;
+    }
+    h1 {
+      margin-bottom: 0px;
+      color: $slate_1;
+    }
+  }
+
+  &__right {
+    button {
+      border: none;
+      padding: 10px;
+      border-radius: $tiny;
+      background-color: $green_6;
+      color: $slate_1;
+      cursor: pointer;
+      &:hover {
+        background-color: $green_5;
+        color: $slate_1;
+      }
+    }
+    svg {
+      font-size: 1rem;
+      transform: translateY(2px);
+      margin-right: 3px;
+    }
+  }
+}

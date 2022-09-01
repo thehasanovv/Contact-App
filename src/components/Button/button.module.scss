@@ -1,0 +1,25 @@
+@import "../../styles/main";
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 1px;
+}
+
+.button:hover {
+  border-color: #b5b5b5;
+  background-color: "#1b253b";
+}
+
+.button:focus {
+  outline: none;
+  border-color: #363636;
+  color: #363636;
+  box-shadow: 0 0 0 0.125em rgba(156, 157, 161, 0.25);
+}

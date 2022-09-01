@@ -1,0 +1,45 @@
+@import "../../../styles/main";
+
+.container {
+  background-color: #293550;
+  border-radius: 0.35rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @include flex($align: initial, $content: space-between);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &__left {
+    @include flex();
+    &__img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 1.2rem;
+      object-fit: cover;
+    }
+
+    &__user {
+      color: $slate_6;
+      span {
+        font-weight: 600;
+        color: $slate_5;
+      }
+    }
+  }
+  &__right {
+    svg {
+      font-size: 1.18rem;
+      fill: $slate_4;
+      &:hover {
+        fill: $slate_5;
+      }
+    }
+  }
+}
+
+.option {
+  font-size: 1rem;
+}

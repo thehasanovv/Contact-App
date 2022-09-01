@@ -1,0 +1,39 @@
+@import "../../../styles/main";
+
+.option {
+  font-size: 1rem;
+  padding: 4px 10px;
+}
+
+.info {
+  svg {
+    fill: $blue_5;
+  }
+  &:hover {
+    svg {
+      fill: $blue_4;
+    }
+  }
+}
+
+.delete {
+  svg {
+    fill: $red_5;
+  }
+  &:hover {
+    svg {
+      fill: $red_4;
+    }
+  }
+}
+
+.edit {
+  svg {
+    fill: $green_5;
+  }
+  &:hover {
+    svg {
+      fill: $green_4;
+    }
+  }
+}

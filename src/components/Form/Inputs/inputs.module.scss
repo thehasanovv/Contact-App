@@ -1,0 +1,68 @@
+@import "../../../styles/main";
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: $slate_4;
+  background-image: none;
+  border: 1px solid $slate_9;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
+}
+.form_control {
+  margin-bottom: 20px;
+  & > label {
+    color: $slate_4;
+    text-transform: capitalize;
+    font-size: $medium;
+  }
+  &__radio {
+    color: $slate_4;
+    label {
+      margin-right: 10px;
+    }
+  }
+  &__checkbox {
+    input {
+      margin-left: 2px;
+    }
+    label {
+      font-size: $medium;
+      color: $slate_4;
+      margin-left: 10px;
+    }
+  }
+}
+
+.form_control.err_input {
+  input {
+    border: 1px solid $red_5;
+  }
+}
+.form_control.err_select {
+  select {
+    border: 1px solid $red_5;
+  }
+}
+.form_control.err_textarea {
+  textarea {
+    border: 1px solid $red_5;
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap");
+@import "~antd/dist/antd.css";
+@import "./main";
+
+// ===================================
+// RESETS
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b253b;
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #343434;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+// ===================================
+
+.ant-dropdown {
+  .ant-dropdown-menu-item {
+    padding: 0px;
+    margin: 0 auto;
+  }
+}
