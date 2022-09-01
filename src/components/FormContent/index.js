@@ -29,7 +29,6 @@ const ContactsForm = () => {
 
   const onSubmit = (values) => {
     dispatchNano(values);
-    console.log(values);
   };
   return (
     <>
