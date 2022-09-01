@@ -18,7 +18,6 @@ const CheckboxGroup = (props) => {
                   <input
                     type="checkbox"
                     id={option.id}
-                    checked={option.value}
                     {...field}
                     {...rest}
                     value={option.value}
