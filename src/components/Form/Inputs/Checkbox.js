@@ -1,6 +1,6 @@
 import TextError from "../TextError";
 import classes from "./inputs.module.scss";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Field, ErrorMessage } from "formik";
 
 const CheckboxGroup = (props) => {

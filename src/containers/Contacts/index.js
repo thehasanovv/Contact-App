@@ -4,6 +4,7 @@ import { useStateValue } from "../../context/ContactsProvider";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "@rehooks/local-storage";
 import SkeletonCards from "../../components/Skeleton";
+import EmptyCard from "../../components/Empty/EmptyCard";
 
 const Contacts = () => {
   const [{ contacts }, dispatch] = useStateValue();
@@ -26,13 +27,21 @@ const Contacts = () => {
 
   return (
     <div className={classes.container}>
-      {contacts.map((contact) => {
-        return loading ? (
-          <SkeletonCards key={contact.id} />
-        ) : (
-          <ContactCard key={contact.id} contact={contact} />
-        );
-      })}
+      {contacts.length === 0 ? (
+        <div className={classes.container__emty}>
+          <EmptyCard />
+        </div>
+      ) : (
+        <div className={classes.container__wrapper}>
+          {contacts.map((contact) =>
+            loading ? (
+              <SkeletonCards key={contact.id} />
+            ) : (
+              <ContactCard key={contact.id} contact={contact} />
+            )
+          )}
+        </div>
+      )}
     </div>
   );
 };

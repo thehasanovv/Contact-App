@@ -1,0 +1,13 @@
+@import "../../styles/main";
+
+.container {
+  background-color: $gray_8;
+  border-radius: 0.35rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+  &__text {
+    padding: 1.5rem;
+    font-weight: 500;
+    color: $slate_5;
+  }
+}

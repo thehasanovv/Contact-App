@@ -17,12 +17,12 @@ const ContactsForm = () => {
   const { value, dispatchNano } = useValue(path);
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Required"),
-    surname: Yup.string().required("Required"),
-    fatherName: Yup.string().required("Required"),
-    email: Yup.string().email().required("Required"),
-    additionalInfo: Yup.string().required("Required"),
-    faculty: Yup.string().required("Required"),
+    name: Yup.string().trim().required("Required"),
+    surname: Yup.string().trim().required("Required"),
+    fatherName: Yup.string().trim().required("Required"),
+    email: Yup.string().trim().email().required("Required"),
+    additionalInfo: Yup.string().trim().required("Required"),
+    faculty: Yup.string().trim().required("Required"),
     position: Yup.string().required("Required"),
     gender: Yup.string().required("Required"),
   });
