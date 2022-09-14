@@ -18,3 +18,4 @@ To view a live example, [click here](https://contact-app-lake.vercel.app/contact
 * Yup
 * Sweetalert2
 * NanoId
+
