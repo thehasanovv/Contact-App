@@ -52,7 +52,7 @@ const ContactsForm = () => {
                 <label htmlFor="file">
                   <CloudUploadOutlined />
                   {!uploadImg ? (
-                    <div>Dizayn üçün - Hal hazirda disable edilib</div>
+                    <div>Disabled for now</div>
                   ) : (
                     <div>{uploadImg}</div>
                   )}
